@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backgraund
+    uniqueID: 1290666031
+    locked: 0
+  - name: Backgraund2
+    uniqueID: 853968265
+    locked: 0
+  - name: Backgraund3
+    uniqueID: 1898668063
+    locked: 0
+  - name: Textures
+    uniqueID: 2436463893
+    locked: 0
+  - name: Buttons
+    uniqueID: 3694486451
+    locked: 0
