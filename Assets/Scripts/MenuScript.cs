@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
@@ -14,5 +14,10 @@ public class MenuScript : MonoBehaviour
     void Update()
     {
         
+    }
+    
+    public void StartPlaying()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
