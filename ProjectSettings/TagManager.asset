@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Audio
+  - Natur
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Text
   - 
   - 
   - 
@@ -55,4 +57,7 @@ TagManager:
     locked: 0
   - name: Buttons
     uniqueID: 3694486451
+    locked: 0
+  - name: Canvass
+    uniqueID: 3779496973
     locked: 0
