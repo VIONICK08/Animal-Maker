@@ -19,7 +19,7 @@ public class RandomBackgraund2 : MonoBehaviour
 
     int textCheck;
 
-    int i = 0;
+    //int i = 0;
 
     private void OnMouseDown()
     {
@@ -34,11 +34,7 @@ public class RandomBackgraund2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Advertisement.isSupported)
-        {
-            Advertisement.Initialize("e979571e-3da3-4da9-8847-56e67f8c6042", false);
-        }
-
+        
         if (PlayerPrefs.GetString("Music") == "no")
         {
             GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
@@ -47,6 +43,8 @@ public class RandomBackgraund2 : MonoBehaviour
         {
             GameObject.Find("NatureAudio").GetComponent<AudioSource>().Play();
         }
+
+
     }
 
     private void OnMouseUpAsButton()
@@ -90,10 +88,7 @@ public class RandomBackgraund2 : MonoBehaviour
                 {
                     GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
                     canvas.SetActive(true);
-                    if (Advertisement.IsReady())
-                    {
-                        Advertisement.Show();
-                    }
+                    
                 }
                     
             }
@@ -101,10 +96,7 @@ public class RandomBackgraund2 : MonoBehaviour
             {
                 GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
                 canvas.SetActive(true);
-                if (Advertisement.IsReady())
-                {
-                    Advertisement.Show();
-                }
+                
             }
                 
         }
@@ -113,10 +105,7 @@ public class RandomBackgraund2 : MonoBehaviour
         {
             GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
             canvas.SetActive(true);
-            if (Advertisement.IsReady())
-            {
-                Advertisement.Show();
-            }
+            
         }
     }
 
@@ -132,10 +121,7 @@ public class RandomBackgraund2 : MonoBehaviour
                 {
                     GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
                     canvas.SetActive(true);
-                    if (Advertisement.IsReady())
-                    {
-                        Advertisement.Show();
-                    }
+                    
                 }
                 else
                     ran.onRandomchik = true;

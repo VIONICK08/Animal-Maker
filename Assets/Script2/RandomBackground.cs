@@ -20,7 +20,7 @@ public class RandomBackground : MonoBehaviour
 
     int textCheck;
 
-    int i = 0;
+   // int i = 0;
 
     private void OnMouseDown()
     {
@@ -35,10 +35,6 @@ public class RandomBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Advertisement.isSupported)
-        {
-            Advertisement.Initialize("e979571e-3da3-4da9-8847-56e67f8c6042",false);
-        }
 
         if (PlayerPrefs.GetString("Music") == "no")
         {
@@ -93,10 +89,7 @@ public class RandomBackground : MonoBehaviour
         {
             GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
             canvas.SetActive(true);
-            if (Advertisement.IsReady())
-            {
-                Advertisement.Show();
-            }
+            
         }
 
     }
@@ -107,10 +100,7 @@ public class RandomBackground : MonoBehaviour
         {
             GameObject.Find("NatureAudio").GetComponent<AudioSource>().Stop();
             canvas.SetActive(true);
-            if (Advertisement.IsReady())
-            {
-                Advertisement.Show();
-            }
+           
         }
         else
         if(ran.type != sts.Type())
